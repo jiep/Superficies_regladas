@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1792197,      29976]
-NotebookOptionsPosition[   1789873,      29909]
-NotebookOutlinePosition[   1790215,      29924]
-CellTagsIndexPosition[   1790172,      29921]
+NotebookDataLength[   1793149,      30004]
+NotebookOptionsPosition[   1790781,      29936]
+NotebookOutlinePosition[   1791123,      29951]
+CellTagsIndexPosition[   1791080,      29948]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -29833,6 +29833,33 @@ P2OQOsg=
 Cell[BoxData[""], "Input",
  CellChangeTimes->{{3.637818565825143*^9, 3.637818565856387*^9}}],
 
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"Hiperboloide", " ", "con", " ", "a"}], " ", "=", " ", 
+    RowBox[{"b", " ", "=", " ", 
+     RowBox[{"c", " ", "=", " ", "1"}]}]}], " ", "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"ParametricPlot3D", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"u", "*", "v"}], ",", "u", ",", " ", 
+      RowBox[{"v", "^", "2"}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"u", ",", 
+      RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"v", ",", 
+      RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+    RowBox[{"PlotStyle", "\[Rule]", 
+     RowBox[{"RGBColor", "[", 
+      RowBox[{"0.17`", ",", "0.47000000000000003`", ",", "1.`"}], "]"}]}], 
+    ",", 
+    RowBox[{"PlotTheme", "\[Rule]", "\"\<Business\>\""}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.637819852473585*^9, 3.637819897356228*^9}}],
+
 Cell[BoxData[""], "Input",
  CellChangeTimes->{{3.6378185888561664`*^9, 3.637818588918631*^9}}],
 
@@ -29959,25 +29986,26 @@ Cell[1701163, 28400, 94, 1, 31, InheritFromParent],
 Cell[1701260, 28403, 85908, 1426, 444, "Output"]
 }, Open  ]],
 Cell[1787183, 29832, 92, 1, 31, InheritFromParent],
-Cell[1787278, 29835, 94, 1, 31, InheritFromParent],
+Cell[1787278, 29835, 905, 25, 52, "Input"],
+Cell[1788186, 29862, 94, 1, 31, InheritFromParent],
 Cell[CellGroupData[{
-Cell[1787397, 29840, 94, 1, 31, InheritFromParent],
-Cell[1787494, 29843, 683, 14, 21, "Message"]
+Cell[1788305, 29867, 94, 1, 31, InheritFromParent],
+Cell[1788402, 29870, 683, 14, 21, "Message"]
 }, Open  ]],
-Cell[1788192, 29860, 96, 1, 31, InheritFromParent],
-Cell[1788291, 29863, 94, 1, 31, InheritFromParent],
-Cell[1788388, 29866, 94, 1, 31, InheritFromParent],
-Cell[1788485, 29869, 92, 1, 31, InheritFromParent],
-Cell[1788580, 29872, 92, 1, 31, InheritFromParent],
-Cell[1788675, 29875, 94, 1, 31, "Input"],
-Cell[1788772, 29878, 395, 7, 31, "Input"],
-Cell[1789170, 29887, 93, 1, 31, "Input"],
-Cell[1789266, 29890, 96, 1, 31, "Input"],
-Cell[1789365, 29893, 94, 1, 31, "Input"],
-Cell[1789462, 29896, 96, 1, 31, "Input"],
-Cell[1789561, 29899, 94, 1, 31, "Input"],
-Cell[1789658, 29902, 117, 2, 31, "Input"],
-Cell[1789778, 29906, 91, 1, 31, "Input"]
+Cell[1789100, 29887, 96, 1, 31, InheritFromParent],
+Cell[1789199, 29890, 94, 1, 31, InheritFromParent],
+Cell[1789296, 29893, 94, 1, 31, InheritFromParent],
+Cell[1789393, 29896, 92, 1, 31, InheritFromParent],
+Cell[1789488, 29899, 92, 1, 31, InheritFromParent],
+Cell[1789583, 29902, 94, 1, 31, "Input"],
+Cell[1789680, 29905, 395, 7, 31, "Input"],
+Cell[1790078, 29914, 93, 1, 31, "Input"],
+Cell[1790174, 29917, 96, 1, 31, "Input"],
+Cell[1790273, 29920, 94, 1, 31, "Input"],
+Cell[1790370, 29923, 96, 1, 31, "Input"],
+Cell[1790469, 29926, 94, 1, 31, "Input"],
+Cell[1790566, 29929, 117, 2, 31, "Input"],
+Cell[1790686, 29933, 91, 1, 31, "Input"]
 }
 ]
 *)
