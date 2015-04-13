@@ -1,4 +1,4 @@
-\documentclass[11pt]{beamer}
+\documentclass[10pt]{beamer}
 \usetheme{Madrid}
 
 \usepackage{fontspec}
@@ -10,7 +10,8 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{color}
-
+\usepackage[center]{caption}
+ 
 \author{José Ignacio Escribano}
 \title{Superficies regladas}
 \date{23 de abril de 2015}
@@ -145,12 +146,91 @@
 	
 	\begin{frame}{Superficie cilíndrica}
 		
+		\begin{columns}[t] % align columns
+			\begin{column}{.60\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=0.8\linewidth]{../Imágenes/rosa-4-petalos}
+					\caption{Rosa de cuatro pétalos}
+					\label{fig:rosa-4-petalos}
+				\end{figure}
+			\end{column}%
+			\hfill%
+			\begin{column}{.40\textwidth}
+				$$\begin{array}{rcll}
+					a : & [0, 2\pi] & \to & \R^2\\
+						& t & \mapsto & (x(t), y(t))
+				\end{array}$$
+				
+			donde 
+			
+			$$ \begin{cases}
+			x(t) = \cos(2t)\cos t \\
+			y(t) = \cos(2t) \sen t
+			\end{cases} $$
+			\end{column}%
+		\end{columns}
+	
+	\end{frame}
+	
+	\begin{frame}{Superficie cilíndrica}
+		
+		\begin{columns}[t] % align columns
+			\begin{column}{.50\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=0.8\linewidth]{../Imágenes/cilindro-rosa-4-petalos}
+					\caption{Superficie cilíndrica a partir de la rosa de cuatro pétalos}
+					\label{fig:cilindro-rosa-4-petalos}
+				\end{figure}
+			\end{column}%
+			\hfill%
+			\begin{column}{.50\textwidth}
+				$$\begin{array}{rcll}
+				r : & [0, 2\pi] \times [0,1] & \to & \R^3\\
+				& (u,v) & \mapsto & (x,y,z)
+				\end{array}$$
+				
+				donde 
+				
+				$$ \begin{cases}
+				x(u,v) = \cos(2u)\cos u \\
+				y(u,v) = \cos(2u) \sen u \\
+				z(u,v) = v
+				\end{cases} $$
+			\end{column}%
+		\end{columns}
+		
 	\end{frame}
 	
 	\subsection{Superficie cónica}
 	
 	\begin{frame}{Superficie cónica}
-		
+		\begin{columns}[t] % align columns
+			\begin{column}{.50\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=0.8\linewidth]{../Imágenes/cono-rosa-4-petalos}
+					\caption{Superficie cónica a partir de la rosa de cuatro pétalos}
+					\label{fig:cono-rosa-4-petalos}
+				\end{figure}
+			\end{column}%
+			\hfill%
+			\begin{column}{.50\textwidth}
+				$$\begin{array}{rcll}
+				r : & [0, 2\pi] \times [0,1] & \to & \R^3\\
+				& (u,v) & \mapsto & (x,y,z)
+				\end{array}$$
+				
+				donde 
+				
+				$$ \begin{cases}
+				x(u,v) = v\cos(2u)\cos u \\
+				y(u,v) = v\cos(2u) \sen u \\
+				z(u,v) = v
+				\end{cases} $$
+			\end{column}%
+		\end{columns}
 	\end{frame}
 	
 	\subsection{Conoides}
@@ -158,25 +238,189 @@
 	\subsubsection{Conoide de Wallis}
 	
 	\begin{frame}{Conoide de Wallis}
-		
+		\begin{columns}[t] % align columns
+			\begin{column}{.50\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=0.8\linewidth]{../Imágenes/conoide-de-Wallis-1}
+					\caption{Conoide de Wallis con $a=b=c=1$}
+					\label{fig:conoide-de-Wallis-1}
+				\end{figure}
+			\end{column}%
+			\hfill%
+			\begin{column}{.50\textwidth}
+				$$\begin{array}{rcll}
+				r : & [0, 2\pi] \times [0,1] & \to & \R^3\\
+				& (u,v) & \mapsto & (x,y,z)
+				\end{array}$$
+				
+				donde 
+				
+				$$ \begin{cases}
+				x(u,v) = v \cos u \\
+				y(u,v) = v \sen u \\
+				z(u,v) = c \sqrt{a^2 - b^2 \cos^2 u}
+				\end{cases} $$
+			\end{column}%
+		\end{columns}
+	\end{frame}
+	
+	\begin{frame}{Conoide de Wallis}
+		\begin{columns}[t] % align columns
+			\begin{column}{.50\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=0.8\linewidth]{../Imágenes/conoide-de-Wallis-2}
+					\caption{Otra vista del conoide de Wallis con $a=b=c=1$}
+					\label{fig:conoide-de-Wallis-2}
+				\end{figure}
+			\end{column}%
+			\hfill%
+			\begin{column}{.50\textwidth}
+				%\animategraphics{12}{../Imágenes/Conoide-de-Wallis/Wallis_Conical_Edge-}{0}{59}
+			\end{column}%
+		\end{columns}
 	\end{frame}
 	
 	\subsubsection{Conoide de Plücker}
 	
 	\begin{frame}{Conoide de Plücker}
-		
+		\begin{columns}[t] % align columns
+			\begin{column}{.50\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=0.8\linewidth]{../Imágenes/conoide-de-Plucker-n=2-1}
+					\caption{Conoide de Plücker}
+					\label{fig:conoide-de-Plucker-1}
+				\end{figure}
+			\end{column}%
+			\hfill%
+			\begin{column}{.50\textwidth}
+				$$\begin{array}{rcll}
+				r : & [0, 2\pi] \times [0,1] & \to & \R^3\\
+				& (u,v) & \mapsto & (x,y,z)
+				\end{array}$$
+				
+				donde 
+				
+				$$ \begin{cases}
+				x(u,v) = v \cos u \\
+				y(u,v) = v \sen u \\
+				z(u,v) = \sen 2u
+				\end{cases} $$
+			\end{column}%
+		\end{columns}
+	\end{frame}
+	
+	\begin{frame}{Conoide de Plücker}
+		\begin{columns}[t] % align columns
+			\begin{column}{.50\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=0.8\linewidth]{../Imágenes/conoide-de-Plucker-n=2-2}
+					\caption{Otra vista del conoide de Plücker}
+					\label{fig:conoide-de-Plücker-2}
+				\end{figure}
+			\end{column}%
+			\hfill%
+			\begin{column}{.50\textwidth}
+				%\animategraphics{12}{../Imágenes/Conoide-de-Wallis/Wallis_Conical_Edge-}{0}{59}
+			\end{column}%
+		\end{columns}
 	\end{frame}
 	
 	\subsubsection{Conoide de Plücker generalizado}
 	
 	\begin{frame}{Conoide de Plücker generalizado}
-		
+		\begin{columns}[t] % align columns
+			\begin{column}{.50\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=0.8\linewidth]{../Imágenes/conoide-de-Plucker-n=3-1}
+					\caption{Conoide de Plücker generalizado con $n=3$}
+					\label{fig:conoide-de-Plucker-generalizado-1}
+				\end{figure}
+			\end{column}%
+			\hfill%
+			\begin{column}{.50\textwidth}
+				$$\begin{array}{rcll}
+				r : & [0, 2\pi] \times [0,1] & \to & \R^3\\
+				& (u,v) & \mapsto & (x,y,z)
+				\end{array}$$
+				
+				donde 
+				
+				$$ \begin{cases}
+				x(u,v) = v \cos u \\
+				y(u,v) = v \sen u \\
+				z(u,v) = \sen nu
+				\end{cases} $$
+			\end{column}%
+		\end{columns}
+	\end{frame}
+	
+	\begin{frame}{Conoide de Plücker generalizado}
+		\begin{columns}[t] % align columns
+			\begin{column}{.50\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=0.8\linewidth]{../Imágenes/conoide-de-Plucker-n=3-2}
+					\caption{Otra vista del conoide de Plücker generalizado con $n=3$}
+					\label{fig:conoide-de-Plücker-generalizado-2}
+				\end{figure}
+			\end{column}%
+			\hfill%
+			\begin{column}{.50\textwidth}
+				%\animategraphics{12}{../Imágenes/Conoide-de-Wallis/Wallis_Conical_Edge-}{0}{59}
+			\end{column}%
+		\end{columns}
 	\end{frame}
 	
 	\subsubsection{Paraguas de Whitney}
 	
 	\begin{frame}{Paraguas de Whitney}
-		
+		\begin{columns}[t] % align columns
+			\begin{column}{.50\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=0.8\linewidth]{../Imágenes/paraguas-de-Whitney-1}
+					\caption{Paraguas de Whitney}
+					\label{fig:paraguas-de-Whitney-1}
+				\end{figure}
+			\end{column}%
+			\hfill%
+			\begin{column}{.50\textwidth}
+				$$\begin{array}{rcll}
+				r : & [-1, 1]^2 & \to & \R^3\\
+				& (u,v) & \mapsto & (x,y,z)
+				\end{array}$$
+				
+				donde 
+				
+				$$ \begin{cases}
+				x(u,v) = uv \\
+				y(u,v) = u \\
+				z(u,v) = v^2
+				\end{cases} $$
+			\end{column}%
+		\end{columns}
+	\end{frame}
+	
+	\begin{frame}{Paraguas de Whitney}
+		\begin{columns}[t] % align columns
+			\begin{column}{.50\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=0.8\linewidth]{../Imágenes/paraguas-de-Whitney-2}
+					\caption{Otra vista del paraguas de Whitney}
+					\label{fig:paraguas-de-Whitney-2}
+				\end{figure}
+			\end{column}%
+			\hfill%
+			\begin{column}{.50\textwidth}
+				%\animategraphics{12}{../Imágenes/Conoide-de-Wallis/Wallis_Conical_Edge-}{0}{59}
+			\end{column}%
+		\end{columns}
 	\end{frame}
 	
 	\subsection{Otras}
@@ -184,34 +428,173 @@
 	\subsubsection{Banda de Möbius}
 	
 	\begin{frame}{Banda de Möbius}
-		
+		\begin{columns}[t] % align columns
+			\begin{column}{.50\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=0.8\linewidth]{../Imágenes/banda-de-moebius}
+					\caption{Banda de Möbius}
+					\label{fig:banda-de-moebius}
+				\end{figure}
+			\end{column}%
+			\hfill%
+			\begin{column}{.50\textwidth}
+				$$\begin{array}{rcll}
+				r : & [0, 2\pi] \times [-1,1] & \to & \R^3\\
+				& (u,v) & \mapsto & (x,y,z)
+				\end{array}$$
+				
+				donde 
+				
+				$$ \begin{cases}
+				x(u,v) = \left( 1 + \frac{v}{2}\cos\frac{u}{2} \right)\cos u \\
+				y(u,v) = \left( 1 + \frac{v}{2}\cos\frac{u}{2} \right)\sen u \\
+				z(u,v) = \frac{v}{2}\sen\frac{u}{2}
+				\end{cases} $$
+			\end{column}%
+		\end{columns}
+	\end{frame}
+	
+	\begin{frame}{Banda de Möbius}
+		%\animategraphics{12}{../Imágenes/Conoide-de-Wallis/Wallis_Conical_Edge-}{0}{59}
 	\end{frame}
 	
 	\subsubsection{Helicoide}
 	
 	\begin{frame}{Helicoide}
-		
+		\begin{columns}[t] % align columns
+			\begin{column}{.50\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=0.5\linewidth]{../Imágenes/helicoide}
+					\caption{Helicoide}
+					\label{fig:helicoide}
+				\end{figure}
+			\end{column}%
+			\hfill%
+			\begin{column}{.50\textwidth}
+				$$\begin{array}{rcll}
+				r : & [0, 2\pi] \times \R & \to & \R^3\\
+				& (u,v) & \mapsto & (x,y,z)
+				\end{array}$$
+				
+				donde 
+				
+				$$ \begin{cases}
+				x(u,v) = v\cos u \\
+				y(u,v) = v\sen u \\
+				z(u,v) = u
+				\end{cases} $$
+			\end{column}%
+		\end{columns}
+	\end{frame}
+	
+	\begin{frame}{Helicoide}
+		%\animategraphics{12}{../Imágenes/Conoide-de-Wallis/Wallis_Conical_Edge-}{0}{59}
 	\end{frame}
 	
 	\subsubsection{Hiperboloide}
 	
 	\begin{frame}{Hiperboloide}
-		
+		\begin{columns}[t] % align columns
+			\begin{column}{.50\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=0.9\linewidth]{../Imágenes/hiperboloide}
+					\caption{Hiperboloide con $a=b=c=1$}
+					\label{fig:hiperboloide}
+				\end{figure}
+			\end{column}%
+			\hfill%
+			\begin{column}{.50\textwidth}
+				$$\begin{array}{rcll}
+				r : & \R \times [0, 2\pi] & \to & \R^3\\
+				& (u,v) & \mapsto & (x,y,z)
+				\end{array}$$
+				
+				donde 
+				
+				$$ \begin{cases}
+				x(u,v) = a \cosh u \cos v \\
+				y(u,v) = b \cosh u \sen v \\
+				z(u,v) = c \senh u
+				\end{cases} $$
+			\end{column}%
+		\end{columns}
 	\end{frame}
 	
-	\section{Aplicaciones}
+	\section{Aplicaciones a la arquitectura}
 	
-		\begin{frame}
-			\begin{center}
-				\Huge\textbf{\textsf{\textcolor{blue}{Aplicaciones}}}
-			\end{center}
-		\end{frame}
+	\begin{frame}
+		\begin{center}
+			\Huge\textbf{\textsf{\textcolor{blue}{Aplicaciones \\ a la arquitectura}}}
+		\end{center}
+	\end{frame}
+
+	\begin{frame}{Aplicaciones a la arquitectura}	
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.5\linewidth]{../Imágenes/Aplicaciones/Escuelas_Sagrada_Familia}
+			\caption{Techo de la Escuela de la Sagrada Familia. \url{http://en.wikipedia.org/wiki/File:Escuelas_Sagrada_Familia.jpg}}
+			\label{fig:Sagrada-familia}
+		\end{figure}	
+	\end{frame}
 	
-	\subsection{A la arquitectura}
+	\begin{frame}{Aplicaciones a la arquitectura}	
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.8\linewidth]{../Imágenes/Aplicaciones/Didcot_power_station_cooling_tower_zootalures}
+			\caption{Torre de refrigeración en Didcot, Reino Unido \url{http://en.wikipedia.org/wiki/File:Didcot_power_station_cooling_tower_zootalures.jpg}}
+			\label{fig:Didicot}
+		\end{figure}	
+	\end{frame}
 	
-	\subsection{Otras}
+	\begin{frame}{Aplicaciones a la arquitectura}	
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.4\linewidth]{../Imágenes/Aplicaciones/Ciechanow_water_tower}
+			\caption{Torre de agua en Ciechanów, Polonia \url{http://en.wikipedia.org/wiki/File:Ciechanow_water_tower.jpg}}
+			\label{fig:torre-agua}
+		\end{figure}	
+	\end{frame}
 	
+	\begin{frame}{Aplicaciones a la arquitectura}	
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.35\linewidth]{../Imágenes/Aplicaciones/Kobe_port_tower11s3200}
+			\caption{Torre del puerto en Kobe, Japón \url{http://en.wikipedia.org/wiki/File:Kobe_port_tower11s3200.jpg}}
+			\label{fig:torre-japon}
+		\end{figure}	
+	\end{frame}
 	
+	\begin{frame}{Aplicaciones a la arquitectura}	
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.35\linewidth]{../Imágenes/Aplicaciones/Cremona,_torrazzo_interno_02_scala_a_chiocciola}
+			\caption{Escaleras en el interior de la Torrazzo di Cremona
+			\url{http://en.wikipedia.org/wiki/File:Cremona,_torrazzo_interno_02_scala_a_chiocciola.JPG}}
+			\label{fig:italia}
+		\end{figure}	
+	\end{frame}
 	
+	\begin{frame}{Aplicaciones a la arquitectura}	
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.35\linewidth]{../Imágenes/Aplicaciones/Nagytotlak}
+			\caption{Iglesia en Selo, Eslovenia
+			\url{http://en.wikipedia.org/wiki/File:Nagytotlak.JPG}}
+			\label{fig:eslovenia}
+		\end{figure}	
+	\end{frame}
+	
+	\begin{frame}{Aplicaciones a la arquitectura}	
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.6\linewidth]{../Imágenes/Aplicaciones/W-wa_Ochota_PKP-WKD}
+			\caption{Techo de la estación de ferrocarriles de Ochota en Varsovia, Polonia
+				\url{http://en.wikipedia.org/wiki/File:W-wa_Ochota_PKP-WKD.jpg}}
+			\label{fig:trenes}
+		\end{figure}	
+	\end{frame}
 	
 \end{document}
