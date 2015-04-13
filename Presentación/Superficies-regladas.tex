@@ -40,33 +40,97 @@
 	
 	
 	\begin{frame}{Introducción}
-		\begin{defi}[de superficie]
-			\textcolor{red}{Introducir definición}
+		\begin{defi}
+			Una superficie es una aplicación
+			\begin{equation}
+			r : [a,b] \times [c,d] \subseteq \R^2 \to \R^3
+			\end{equation}
 		\end{defi}
-	\end{frame}
-	
-	\begin{frame}{Introducción}
+		
 		\begin{ejemplo}[de superficie]
 			\textcolor{red}{Imagen de superficie}
 		\end{ejemplo}	
 	\end{frame}
 	
 	\begin{frame}{Introducción}
-		\begin{defi}[de superficie reglada]
-			\textcolor{red}{Introducir definición}
+		\begin{defi}
+			Una superficie reglada es aquella generada por una recta en el espacio llamada generatriz, a lo largo de una curva llamada directriz.
 		\end{defi}	
+		
+		\begin{defi}
+			Una superficie es reglada si es generada por una familia uniparamétrica de rectas (llamadas generatrices).\\
+			
+			La parametrización de una superficie reglada es 
+			
+			\begin{equation}
+			r(u,v) = \rho(u) + v a(u)
+			\end{equation}
+			
+			donde $\rho, a : I = [a,b] \to \R^3$ son dos curvas en el espacio.
+		\end{defi}
+		
+		\begin{defi}
+			Un conjunto de curvas de una superficie reglada que interseca a cada generatriz en un punto se llama curva generatriz.
+		\end{defi}	
+		
 	\end{frame}
 	
 	\begin{frame}{Introducción}
-		\begin{defi}[de superficie reglada]
-			\textcolor{red}{Introducir definiciones de superficies regladas (superficie cilíndrica, superficie cónica, superficies de Catalan, conoides, etc)}
-		\end{defi}	
+		\begin{defi}
+			Una superficie reglada es cilíndrica si es de la forma 
+			
+			\begin{equation}
+			r(u,v) = \rho(u) + v a_0
+			\end{equation}
+			
+			con $a_0 \in \R^3$.
+		\end{defi}
+		
+		\begin{defi}
+			Una superficie reglada es cónica si es de la forma 
+			
+			\begin{equation}
+			r(u,v) = \rho_0 + v a(u)
+			\end{equation}
+			
+			con $\rho_0 \in \R^3$.\\
+			
+			$\rho_0$ es el vértice del cono.
+		\end{defi}
 	\end{frame}
 	
 	\begin{frame}{Introducción}
-		\begin{defi}[de superficie doblemente reglada]
-			\textcolor{red}{Introducir definición}
-		\end{defi}	
+			\begin{defi}
+				Una superficie reglada es tangente desarrollable si es de la forma 
+				
+				\begin{equation}
+				r(u,v) = \rho(u) + v \rho'(u)
+				\end{equation}
+			\end{defi}
+			
+			\begin{defi}
+				Una superficie reglada que cumple que $a(u) \neq 0 \ \ \forall u \in I$ se denomina no cilíndrica. 
+			\end{defi}
+			
+			\begin{defi}
+				Una superficie no cilíndrica cuyas generatrices son paralelas a un plano directriz fijo se llama superficie de Catalan.
+			\end{defi}
+			
+	\end{frame}
+	
+	\begin{frame}{Introducción}
+		\begin{teo}[Caracterización de las superficies de Catalan]
+			Una superficie reglada $r(u,v) = \rho(u) + v a(u)$ es una superficie de Catalan si y sólo si
+			\begin{equation}
+			[a(u), a'(a), a''(u)] = 0  \ \ \forall u \in I
+			\end{equation}.
+		\end{teo}
+		
+		\begin{defi}
+			Una superfie de Catalan se dice conoide si todas las generatrices intersecan una recta constante (el eje del conoide).
+		\end{defi}
+		
+	
 	\end{frame}
 	
 	\section{Algunas superficies regladas}
