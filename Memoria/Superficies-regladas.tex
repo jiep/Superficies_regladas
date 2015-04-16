@@ -190,6 +190,10 @@ Algunos tipos de superficies regladas son las superficies cilíndricas, superfic
 	Una superficie de Catalan se dice conoide si todas las generatrices intersecan una recta constante (el eje del conoide).
 \end{defi}
 
+\begin{defi}
+	Una superficie reglada se dice que es doblemente reglada si existen dos rectas que generan la superficie.
+\end{defi}
+
 \section{Algunas superficies regladas}
 
 \subsection{Superficies cilíndricas y cónicas}
@@ -511,7 +515,34 @@ donde $a, b, c \in \R$.
 
 Como existen dos parametrizaciones distintas de la forma $\rho(u) + v a(u)$, el hiperboloide se trata de una superficie doblemente reglada.
 
-\textcolor{red}{Hacer paraboloide hiperbólico}
+\subsection{Paraboloide hiperbólico}
+
+\begin{defi}
+	
+El paraboloide hiperbólico es una superficie doblemente reglada que está dada por las parametrizaciones siguientes:
+
+$$\begin{array}{rcll}
+r : & \R^2 & \to & \R^3\\
+& (u,v) & \mapsto & (x(u,v),y(u,v),z(u,v))
+\end{array}$$
+
+donde 
+
+$$ \begin{cases}
+x(u,v) = a(u+v) \\
+y(u,v) = \pm bv \\
+z(u,v) = u^2 +2uv
+\end{cases} $$
+\end{defi}
+
+La Figura~\ref{fig:Paraboloide hiperbólico-2} muestra un paraboloide hiperbólico con $a = b = 1$.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.8\linewidth]{../Imágenes/paraboloide-hiperbolico}
+	\caption{Paraboloide hiperbólico con $a = b = 1$}
+	\label{fig:Paraboloide hiperbólico-2}
+\end{figure}
 
 \subsection{Cola de milano}
 
