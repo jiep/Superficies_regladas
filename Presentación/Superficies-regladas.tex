@@ -150,7 +150,7 @@
 		\begin{teo}[Caracterización de las superficies de Catalan]
 			Una superficie reglada $r(u,v) = \rho(u) + v a(u)$ es una superficie de Catalan si y sólo si
 			\begin{equation}
-			[a(u), a'(a), a''(u)] = 0  \ \ \forall u \in I
+			[a(u), a'(a), a''(u)] = 0,  a''(u) \neq 0 \ \ \forall u \in I
 			\end{equation}.
 		\end{teo}
 		
@@ -259,7 +259,7 @@
 			\end{column}%
 		\end{columns}
 	\end{frame}
-	
+		
 	\subsection{Conoides}
 	
 	\subsubsection{Conoide de Wallis}
@@ -675,6 +675,56 @@
 			\caption{Paraboloide hiperbólico como superficie doblemente reglada \url{http://en.wikipedia.org/wiki/File:Hyperbolic-paraboloid.svg}}
 			\label{fig:Paraboloide hiperbólico-2}
 		\end{figure}	
+	\end{frame}
+	
+	\begin{frame}{Cola de milano (o Swallowtail)}
+		\begin{columns}[t] % align columns
+			\begin{column}{.50\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=0.8\linewidth]{../Imágenes/cola-de-milano-1}
+					\caption{Cola de milano}
+					\label{fig:cola-de-milano-1}
+				\end{figure}
+			\end{column}%
+			\hfill%
+			\begin{column}{.50\textwidth}
+				$$\begin{array}{rcll}
+				r : & [-1, 1] \times [-2,2] & \to & \R^3\\
+				& (u,v) & \mapsto & (x,y,z)
+				\end{array}$$
+				
+				donde 
+				
+				$$ \begin{cases}
+				x(u,v) = v \\
+				y(u,v) = -4u^3 - 2uv \\
+				z(u,v) = 3u^4 + u^2v
+				\end{cases} $$
+			\end{column}%
+		\end{columns}
+	\end{frame}
+	
+	\begin{frame}{Cola de milano (o Swallowtail)}
+		\begin{columns}[b] % align columns
+			\begin{column}{.50\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=\linewidth]{../Imágenes/cola-de-milano-2}
+					\caption{Otra vista de la cola de milano}
+					\label{fig:cola-de-milano-2}
+				\end{figure}
+			\end{column}%
+			\hfill%
+			\begin{column}{.50\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=0.8\linewidth]{../Imágenes/Aplicaciones/The_Swallowtail}
+					\caption{The Swallow's Tail, Salvador Dalí}
+					\label{fig:cola-de-milano-3}
+				\end{figure}
+			\end{column}%
+		\end{columns}
 	\end{frame}
 		
 	
