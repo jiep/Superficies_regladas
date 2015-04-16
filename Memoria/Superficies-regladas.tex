@@ -4,7 +4,7 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
-\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage[spanish,es-nodecimaldot, es -lcroman]{babel}
 \usepackage{subfigure}
 \usepackage{natbib}
 \usepackage[titletoc]{appendix}
@@ -15,15 +15,22 @@
 \input{portada}
 \input{comandos}
 
+\setlength\parindent{0pt}
+
 \begin{document}
 	
 \portada{Superficies regladas}{ \ }{ \ }{José Ignacio Escribano (GIS + MAT)}{Móstoles}
+
+\pagenumbering{roman}
 
 \tableofcontents
 \newpage
 
 \listoffigures
 \newpage
+
+\pagenumbering{arabic}
+\pagestyle{plain}
 
 \section{Introducción}
 
@@ -626,20 +633,17 @@ Por últimos, los helicoides se han utilizado para escaleras (Figura~\ref{fig:it
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.35\linewidth]{../Imágenes/Aplicaciones/Cremona,_torrazzo_interno_02_scala_a_chiocciola}
-	\caption{Escaleras en el interior de la Torrazzo di Cremona
+	\caption[Escaleras en el interior de la Torrazzo di Cremona]{Escaleras en el interior de la Torrazzo di Cremona
 	\url{http://en.wikipedia.org/wiki/File:Cremona,_torrazzo_interno_02_scala_a_chiocciola.JPG}}
 	\label{fig:italia}
 \end{figure}
 
-\newpage
+\clearpage
 
 \begin{appendices}
-\nocite{*}
 \bibliographystyle{plain}
 \bibliography{../Bibliografía/bibliografia}
 \end{appendices}
-
-
 
 
 	
